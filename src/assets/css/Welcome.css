@@ -1,0 +1,133 @@
+/* Figma Styles of your File */
+:root {
+    /* Colors */
+    --grey-900: #0b0e1e;
+    --grey-800: #0c122f;
+    --grey-700: #1d212e;
+    --grey-600: #2a2e37;
+    --grey-500: #3a3c40;
+    --grey-400: #82868c;
+    --grey-300: #babfc5;
+    --grey-200: #e3e6eb;
+    --grey-100: rgba(245, 245, 247, 0.57);
+    --primary-900: #2375a1;
+    --primary-800: #2782b3;
+    --primary-700: #2b90c7;
+    --primary-600: #30a0dd;
+    --primary-500: #35b2f6;
+    --primary-400: #3ac4ff;
+    --primary-300: #40d7ff;
+    --primary-200: #47edff;
+    --primary-100: #4effff;
+  
+    /* Fonts */
+    --display-big-font-family: Montserrat-ExtraBold, sans-serif;
+    --display-big-font-size: 68px;
+    --display-big-line-height: normal;
+    --display-big-font-weight: 800;
+    --display-big-font-style: normal;
+    --display-small-font-family: Montserrat-ExtraBold, sans-serif;
+    --display-small-font-size: 32px;
+    --display-small-line-height: normal;
+    --display-small-font-weight: 800;
+    --display-small-font-style: normal;
+    --title-1-font-family: Montserrat-SemiBold, sans-serif;
+    --title-1-font-size: 28px;
+    --title-1-line-height: normal;
+    --title-1-font-weight: 600;
+    --title-1-font-style: normal;
+    --title-2-font-family: Montserrat-SemiBold, sans-serif;
+    --title-2-font-size: 24px;
+    --title-2-line-height: normal;
+    --title-2-font-weight: 600;
+    --title-2-font-style: normal;
+    --title-3-font-family: Montserrat-SemiBold, sans-serif;
+    --title-3-font-size: 18px;
+    --title-3-line-height: normal;
+    --title-3-font-weight: 600;
+    --title-3-font-style: normal;
+    --title-4-font-family: Montserrat-SemiBold, sans-serif;
+    --title-4-font-size: 14px;
+    --title-4-line-height: normal;
+    --title-4-font-weight: 600;
+    --title-4-font-style: normal;
+    --body-1-font-family: Montserrat-SemiBold, sans-serif;
+    --body-1-font-size: 18px;
+    --body-1-line-height: normal;
+    --body-1-font-weight: 600;
+    --body-1-font-style: normal;
+    --body-2-font-family: Montserrat-SemiBold, sans-serif;
+    --body-2-font-size: 14px;
+    --body-2-line-height: normal;
+    --body-2-font-weight: 600;
+    --body-2-font-style: normal;
+    --body-3-font-family: Montserrat-Medium, sans-serif;
+    --body-3-font-size: 14px;
+    --body-3-line-height: 21px;
+    --body-3-font-weight: 500;
+    --body-3-font-style: normal;
+    --body-4-font-family: Montserrat-SemiBold, sans-serif;
+    --body-4-font-size: 13px;
+    --body-4-line-height: normal;
+    --body-4-font-weight: 600;
+    --body-4-font-style: normal;
+    --body-5-font-family: Montserrat-Medium, sans-serif;
+    --body-5-font-size: 13px;
+    --body-5-line-height: normal;
+    --body-5-font-weight: 500;
+    --body-5-font-style: normal;
+    --body-6-font-family: Montserrat-Medium, sans-serif;
+    --body-6-font-size: 12px;
+    --body-6-line-height: normal;
+    --body-6-font-weight: 500;
+    --body-6-font-style: normal;
+    --body-7-font-family: Montserrat-SemiBold, sans-serif;
+    --body-7-font-size: 12px;
+    --body-7-line-height: normal;
+    --body-7-font-weight: 600;
+    --body-7-font-style: normal;
+    --body-8-font-family: Montserrat-Medium, sans-serif;
+    --body-8-font-size: 10px;
+    --body-8-line-height: normal;
+    --body-8-font-weight: 500;
+    --body-8-font-style: normal;
+    --button-1-font-family: Montserrat-SemiBold, sans-serif;
+    --button-1-font-size: 13px;
+    --button-1-line-height: normal;
+    --button-1-font-weight: 600;
+    --button-1-font-style: normal;
+  
+    /* Effects */
+    --shadow-level-1-box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16);
+    --shadow-level-2-box-shadow: 0px 5px 18px 0px rgba(40, 41, 61, 0.07);
+    --shadow-level-3-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.06);
+    --shadow-level-4-box-shadow: 0px 7px 20px 0px rgba(40, 41, 61, 0.08);
+    --shadow-level-5-box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.12);
+    --shadow-level-6-box-shadow: 0px 8px 16px 0px rgba(96, 97, 112, 0.16);
+    --shadow-level-7-box-shadow: 1px 5px 22px 4px rgba(0, 0, 0, 0.15);
+    --shadow-level-8-box-shadow: 1px 5px 22px 4px rgba(0, 0, 0, 0.15);
+    --shadow-level-9-box-shadow: 0px 20px 32px 0px rgba(96, 97, 112, 0.24);
+  }
+
+  .welcome-page,
+.welcome-page * {
+  box-sizing: border-box;
+}
+.welcome-page {
+  background: #ffffff;
+  /* border-radius: 10px; */
+  width: 100%;
+  height: 1024px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid red\;
+}
+.welcome-icon {
+  width: 181px;
+  height: 151px;
+  position: absolute;
+  left: calc(50% - 91px);
+  top: calc(50% - 20px);
+  object-fit: cover;
+}

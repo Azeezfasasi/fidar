@@ -1,0 +1,642 @@
+.dashboard-menu,
+.dashboard-menu * {
+  box-sizing: border-box;
+}
+.dashboard-main-container {
+  background: #f3f4f8;
+  position: relative;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.dashboard-main {
+  width: 775px;
+  height: 650px;
+  position: absolute;
+  top: 100px;
+  left: 280px;
+  overflow-y: visible;
+  overflow-x: hidden;
+  scrollbar-width: thin; /*For Firefox*/
+  scrollbar-color: #35b2f6 transparent; /*For Firefox */
+}
+/* Chrome, Safari, and Edge */
+.dashboard-main::-webkit-scrollbar {
+  width: 8px; 
+  scrollbar-color: #35b2f6 transparent;
+}
+.dashboard-menu {
+  background: #ffffff;
+  padding: 0px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 260px;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+.dashboard-menu.closed {
+  width: 60px; /* Adjust this value to fit the size of the images */
+}
+/* Flexbox to align images and text */
+.list, .list2, .list3 {
+  display: flex;
+  align-items: center;
+  /* padding: 10px; */
+  transition: padding 0.3s ease; /* Smooth transition for padding when closing */
+}
+.dashboard-menu.closed .list,
+.dashboard-menu.closed .list2,
+.dashboard-menu.closed .list3 {
+  padding: 10px 5px;
+  margin-left: 190px;
+}
+.dashboard-menu.closed .list div,
+.dashboard-menu.closed .list2 div,
+.dashboard-menu.closed .list3 div {
+  display: none; /* Hide text when closed */
+}
+/* Hide the FIDAR text when the menu is closed */
+.dashboard-menu.closed .fidar {
+  display: none;
+}
+/* Hide the FIDAR text when the menu is closed */
+.dashboard-menu.closed .group-1 {
+  /* display: none; */
+  margin-left: -15px;
+}
+/* Show the FIDAR text when the menu is open */
+.dashboard-menu.open .fidar {
+  display: block;
+}
+/* Adjust the size of the indent decrease button */
+.indent-decrease {
+  cursor: pointer;
+  z-index: 999999;
+  margin-left: -0px;
+}
+.dashboard-menu.closed img {
+  margin-right: 0; /* Remove the margin when closed, so images are aligned */
+}
+.logo {
+  padding: 20px 14px 20px 18px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.group-1 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 21.09px;
+  position: relative;
+  object-fit: cover;
+  cursor: pointer;
+}
+.fidar {
+  color: #23272e;
+  text-align: left;
+  font-family: "Reospec-Regular", sans-serif;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+.indent-decrease {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
+}
+.list {
+  background: #f3f4f8;
+  border-radius: 6px;
+  padding: 9px 16px 9px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 232px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.active {
+  background: #f3f4f8;
+  font-weight: bold;
+}
+.dashboard {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.dashboard2 {
+  color: #8b909a;
+  text-align: left;
+  font-family: "PublicSans-SemiBold", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  /* font-weight: 600; */
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.list2 {
+  border-radius: 6px;
+  padding: 9px 16px 9px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 232px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.move-to-inbox {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.inbox {
+  color: #8b909a;
+  text-align: left;
+  font-family: "PublicSans-Regular", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  /* font-weight: 400; */
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.outbox {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.outbox2 {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  /* font-weight: var(--light-basic-typography-paragraph-font-weight, 400); */
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.drafts {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.draft {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  /* font-weight: var(--light-basic-typography-paragraph-font-weight, 400); */
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.grade {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.starred {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  /* font-weight: var(--light-basic-typography-paragraph-font-weight, 400); */
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.seun {
+  border-radius: 6px;
+  padding: 15px 30px 15px 30px;
+  flex-shrink: 0;
+  width: 243px;
+  height: 44px;
+  position: relative;
+}
+.inventory {
+  color: #8b909a;
+  text-align: left;
+  font-family: "PublicSans-Regular", sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.vector {
+  width: 12px;
+  height: 6px;
+  position: absolute;
+  left: 201px;
+  top: 19px;
+  overflow: visible;
+}
+.analytics {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.tracked-record {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  font-weight: var(--light-basic-typography-paragraph-font-weight, 400);
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.folder {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.team-folder {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  font-weight: var(--light-basic-typography-paragraph-font-weight, 400);
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.upload {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.my-upload {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  font-weight: var(--light-basic-typography-paragraph-font-weight, 400);
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.folder-open {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.public-folder {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  font-weight: var(--light-basic-typography-paragraph-font-weight, 400);
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.chat {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.instant-chat {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  font-weight: var(--light-basic-typography-paragraph-font-weight, 400);
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.folder-delete {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.trash {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  font-weight: var(--light-basic-typography-paragraph-font-weight, 400);
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section {
+  border-radius: 6px;
+  padding: 30px 30px 15px 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 232px;
+  position: relative;
+}
+.admin {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-caption-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-caption-font-size, 11px);
+  line-height: var(--light-basic-typography-caption-line-height, 14px);
+  font-weight: var(--light-basic-typography-caption-font-weight, 400);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.components {
+  padding: 0px 14px 0px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.list3 {
+  border-radius: 6px;
+  padding: 9px 16px 9px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+.settings {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.setting {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  font-weight: var(--light-basic-typography-paragraph-font-weight, 400);
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.help {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.help2 {
+  color: #8b909a;
+  text-align: left;
+  font-family: var(
+    --light-basic-typography-paragraph-font-family,
+    "PublicSans-Regular",
+    sans-serif
+  );
+  font-size: var(--light-basic-typography-paragraph-font-size, 15px);
+  line-height: var(--light-basic-typography-paragraph-line-height, 22px);
+  font-weight: var(--light-basic-typography-paragraph-font-weight, 400);
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Style for Dashboard header */
+.op {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: var(--grey-300, #babfc5);
+  border-width: 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  width: 605px;
+}
+.frame-9 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  padding: 5px 10px;
+  width: 90%;
+  margin-left: 23px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  position: absolute;
+  left: 7px;
+}
+.search {
+  color: var(--grey-400, #82868c);
+  text-align: left;
+  font-family: var(--title-4-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-4-font-size, 14px);
+  font-weight: var(--title-4-font-weight, 600);
+  position: relative;
+}
+.tune {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+  cursor: pointer;
+}
+/* Style for header profile */
+.frame-3043 {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 229px;
+}
+.notifications {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.hello-femi-welcome {
+  color: var(--grey-500, #3a3c40);
+  text-align: left;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+}
+.ellipse-1 {
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  object-fit: cover;
+}

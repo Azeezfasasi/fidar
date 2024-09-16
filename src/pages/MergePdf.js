@@ -1,0 +1,24 @@
+import React from "react";
+import { Helmet } from "react-helmet";
+import DashboardMenu from '../assets/components/DashboardMenu';
+import DashboardHeader from "../assets/components/DashboardHeader";
+import MergePdfComponent from '../assets/components/MergePdfComponent';
+
+function MergePdf() {
+    return (
+        <>
+        <Helmet>
+            <title>Merge PDF - Fidar</title>
+        </Helmet>
+        <div className="dashboard-main-container">
+            <DashboardMenu />
+            <DashboardHeader />
+            <div className="dash-others">
+                <MergePdfComponent />
+            </div>
+        </div>
+        </>
+    )
+}
+
+export default MergePdf;

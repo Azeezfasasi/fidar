@@ -1,0 +1,558 @@
+.account-settings {
+  color: var(--grey-500, #3a3c40);
+  text-align: center;
+  font-family: var(--title-1-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-1-font-size, 28px);
+  font-weight: var(--title-1-font-weight, 600);
+  position: relative;
+}
+.manage-your-general-profile-security-and-notification-settings {
+  color: var(--grey-500, #3a3c40);
+  text-align: center;
+  font-family: var(--title-3-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-3-font-size, 18px);
+  font-weight: var(--title-3-font-weight, 600);
+  position: relative;
+  margin-top: 20px;
+}
+
+/*  */
+/* .settings-container {
+    background: #ffffff;
+    border-radius: 20px;
+    width: 260px;
+    height: 445px;
+    position: relative;
+    box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16);
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .settings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .settings-item {
+    border-radius: 20px;
+    border: 1px solid var(--grey-400, #82868c);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    text-decoration: none;
+  }
+  
+  .settings-item.active {
+    border-color: var(--primary-500, #35b2f6);
+  }
+  
+  .settings-label {
+    color: var(--grey-400, #82868c);
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .settings-item.active .settings-label {
+    color: var(--primary-500, #35b2f6);
+  }
+   */
+
+   .settings-wrapper {
+    display: flex;
+    width: 97%;
+    margin-top: 20px;
+  }
+  
+  .settings-container {
+    background: #ffffff;
+    border-radius: 20px;
+    width: 260px;
+    height: 445px;
+    position: relative;
+    box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16);
+    overflow: hidden;
+  }
+  
+  .settings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .settings-item {
+    border-radius: 20px;
+    border: 1px solid var(--grey-400, #82868c);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 180px;
+    cursor: pointer;
+  }
+  
+  .settings-item.active {
+    border-color: var(--primary-500, #35b2f6);
+  }
+  
+  .settings-label {
+    color: var(--grey-400, #82868c);
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .settings-item.active .settings-label {
+    color: var(--primary-500, #35b2f6);
+  }
+  
+  .settings-panel {
+    background: #f9f9f9;
+    border-radius: 20px;
+    flex: 1;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for General settings */
+ /* Styles for Settings Container */
+.general-settings-container {
+    background: #ffffff;
+    border-radius: 20px;
+    height: 418px;
+    position: relative;
+    box-shadow: 0px 2px 4px 0px rgba(96, 97, 112, 0.16);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  /* Language & Region title */
+  .language-region-title {
+    color: #3a3c40;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    left: 50px;
+    top: 30px;
+  }
+  
+  /* Language & Region description */
+  .language-region-description {
+    color: #3a3c40;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    left: 50px;
+    top: 67px;
+  }
+  
+  /* Language section */
+  .language-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
+  
+  .section-title {
+    color: #82868c;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* Language selection dropdown */
+  .language-selection {
+    background: #f3f4f8;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 280px;
+    border: none;
+    outline: none;
+  }
+  
+  .current-language {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .selected-language {
+    color: #3a3c40;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* Time zone section */
+  .timezone-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  
+  .timezone-selection {
+    background: #f3f4f8;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 140px;
+    width: 280px;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    outline: none;
+  }
+  
+  .current-timezone {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .selected-timezone {
+    color: #82868c;
+    text-align: left;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  /* Dropdown icon */
+  .dropdown-icon {
+    height: auto;
+    overflow: visible;
+  }
+  
+/* Style for Export data */
+.export-data-title {
+  color: #000000;
+  text-align: left;
+  font-family: var(--title-3-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-3-font-size, 18px);
+  font-weight: var(--title-3-font-weight, 600);
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.export-data-sub-title {
+  color: var(--grey-500, #3a3c40);
+  text-align: justified;
+  font-family: var(--title-4-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-4-font-size, 14px);
+  font-weight: var(--title-4-font-weight, 600);
+  position: relative;
+  margin-top: 20px;
+}
+.download-btn-wrapper {
+  background: #f3f4f8;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  position: relative;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.download-data {
+  color: var(--grey-500, #3a3c40);
+  text-align: left;
+  font-family: var(--title-4-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-4-font-size, 14px);
+  font-weight: var(--title-4-font-weight, 600);
+  position: relative;
+}
+
+/* Style for Notification settings */
+.notification-title {
+  color: #000000;
+  text-align: left;
+  font-family: var(--title-3-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-3-font-size, 18px);
+  font-weight: var(--title-3-font-weight, 600);
+  position: relative;
+  width: 241px;
+}
+.notification-sub-title {
+  color: var(--grey-500, #3a3c40);
+  text-align: justified;
+  font-family: var(--title-4-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-4-font-size, 14px);
+  font-weight: var(--title-4-font-weight, 600);
+  position: relative;
+  margin-top: 40px;
+}
+.notification-toggle-box {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .togle-label {
+    color: var(--grey-500, #3a3c40);
+    text-align: justified;
+    font-family: var(--title-4-font-family, "Montserrat-SemiBold", sans-serif);
+    font-size: var(--title-4-font-size, 14px);
+    font-weight: var(--title-4-font-weight, 600);
+    position: relative;
+    width: 261px;
+  }
+  .toggle-wrapper {
+    flex-shrink: 0;
+    width: 20px;
+    height: 12px;
+    position: relative;
+    box-shadow: var(
+      --shadow-form-box-shadow,
+      0px 5px 18px 0px rgba(40, 41, 61, 0.07)
+    );
+  }
+  
+  /* Container for the bar switch */
+.bar-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  /* Main bar wrapper */
+  .bar {
+    width: 50px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #ccc;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Slider inside the bar */
+  .slider-bar {
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* When the bar switch is toggled ON */
+  .bar.on {
+    background-color: #4caf50;
+  }
+  
+  .bar.on .slider-bar {
+    transform: translateX(30px); /* Move the slider to the right */
+  }
+  
+  /* When the bar switch is toggled OFF */
+  .bar.off {
+    background-color: #ccc;
+  }
+  
+  .bar.off .slider-bar {
+    transform: translateX(0px); /* Keep the slider to the left */
+  }
+  
+  /* Label for the bar switch (On/Off) */
+  .bar-label {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  
+  /* Style for security settings */
+.security-input {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: var(--grey-300, #babfc5);
+  border-width: 1px;
+  padding: 10px 60px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 30px;
+  width: 335px;
+  color: var(--grey-200, #e3e6eb);
+  text-align: left;
+  font-family: var(--button-1-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--button-1-font-size, 13px);
+  font-weight: var(--button-1-font-weight, 600);
+}
+.security-btn {
+  background: #f3f4f8;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  position: relative;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.save-changes {
+  color: var(--grey-500, #3a3c40);
+  text-align: left;
+  font-family: var(--title-4-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-4-font-size, 14px);
+  font-weight: var(--title-4-font-weight, 600);
+  position: relative;
+}
+
+/* Style for profile settings */
+.profile-title {
+  color: #000000;
+  text-align: left;
+  font-family: var(--title-3-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-3-font-size, 18px);
+  font-weight: var(--title-3-font-weight, 600);
+  position: relative;
+  width: 241px;
+}
+.profile-sub-title {
+  color: var(--grey-500, #3a3c40);
+  text-align: justified;
+  font-family: var(--title-4-font-family, "Montserrat-SemiBold", sans-serif);
+  font-size: var(--title-4-font-size, 14px);
+  font-weight: var(--title-4-font-weight, 600);
+  position: relative;
+  margin-top: 20px;
+}
+.profile-image {
+  background: #f3f4f8;
+  border-radius: 50%;
+  width: 122px;
+  height: 122px;
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.profile-icon {
+  width: 66.67%;
+  height: 66.67%;
+  overflow: visible;
+}
+.profile-details {
+    color: #000000;
+    text-align: left;
+    font-family: var(--title-3-font-family, "Montserrat-SemiBold", sans-serif);
+    font-size: var(--title-3-font-size, 18px);
+    font-weight: var(--title-3-font-weight, 600);
+    position: relative;
+    width: 241px;
+    margin-top: 30px;
+  }
+
+  /* Styles for logout */
+  .confirmation-dialog {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+  }
+  
+  .confirmation-dialog p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .confirmation-dialog button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .confirmation-dialog button:first-child {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .confirmation-dialog button:last-child {
+    background-color: #f44336;
+    color: white;
+  }
+  
+
+
+
+
+
+
