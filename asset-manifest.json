@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fidar/static/css/main.2612dc20.css",
-    "main.js": "/fidar/static/js/main.f0dafbb6.js",
+    "main.css": "/fidar/static/css/main.6410d73f.css",
+    "main.js": "/fidar/static/js/main.301a2ec3.js",
     "static/js/453.ed3810f9.chunk.js": "/fidar/static/js/453.ed3810f9.chunk.js",
     "static/media/profile.svg": "/fidar/static/media/profile.54226bf39170917227282ff61924a9e4.svg",
     "static/media/recentavatar.svg": "/fidar/static/media/recentavatar.78a7fc1a8b6a58f328e908c72131cd43.svg",
@@ -44,12 +44,12 @@
     "static/media/dashboard.svg": "/fidar/static/media/dashboard.29e2081e02c65d8972ccb072fc11ade8.svg",
     "static/media/arrowback.svg": "/fidar/static/media/arrowback.e9a7350e94cea2e9e44432f8d27bd78b.svg",
     "static/media/Line3.svg": "/fidar/static/media/Line3.5e6af5edbee3ea85debb42431dd11969.svg",
-    "main.2612dc20.css.map": "/fidar/static/css/main.2612dc20.css.map",
-    "main.f0dafbb6.js.map": "/fidar/static/js/main.f0dafbb6.js.map",
+    "main.6410d73f.css.map": "/fidar/static/css/main.6410d73f.css.map",
+    "main.301a2ec3.js.map": "/fidar/static/js/main.301a2ec3.js.map",
     "453.ed3810f9.chunk.js.map": "/fidar/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2612dc20.css",
-    "static/js/main.f0dafbb6.js"
+    "static/css/main.6410d73f.css",
+    "static/js/main.301a2ec3.js"
   ]
 }
