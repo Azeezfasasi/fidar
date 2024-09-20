@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fidar/static/css/main.3aee3b61.css",
-    "main.js": "/fidar/static/js/main.2108710b.js",
+    "main.css": "/fidar/static/css/main.133fa360.css",
+    "main.js": "/fidar/static/js/main.25a18c84.js",
     "static/js/453.ed3810f9.chunk.js": "/fidar/static/js/453.ed3810f9.chunk.js",
     "static/media/profile.svg": "/fidar/static/media/profile.54226bf39170917227282ff61924a9e4.svg",
     "static/media/recentavatar.svg": "/fidar/static/media/recentavatar.78a7fc1a8b6a58f328e908c72131cd43.svg",
@@ -43,14 +43,15 @@
     "static/media/recentstar.svg": "/fidar/static/media/recentstar.9ffe5da498b9cf9bfda4605aa0913397.svg",
     "static/media/share.svg": "/fidar/static/media/share.f72926e615f0e5f8210e01aaf46fc821.svg",
     "static/media/dashboard.svg": "/fidar/static/media/dashboard.29e2081e02c65d8972ccb072fc11ade8.svg",
+    "static/media/mydashicon.svg": "/fidar/static/media/mydashicon.24234544d1c8f5a9b70fcfcfd2ac420d.svg",
     "static/media/arrowback.svg": "/fidar/static/media/arrowback.e9a7350e94cea2e9e44432f8d27bd78b.svg",
     "static/media/Line3.svg": "/fidar/static/media/Line3.5e6af5edbee3ea85debb42431dd11969.svg",
-    "main.3aee3b61.css.map": "/fidar/static/css/main.3aee3b61.css.map",
-    "main.2108710b.js.map": "/fidar/static/js/main.2108710b.js.map",
+    "main.133fa360.css.map": "/fidar/static/css/main.133fa360.css.map",
+    "main.25a18c84.js.map": "/fidar/static/js/main.25a18c84.js.map",
     "453.ed3810f9.chunk.js.map": "/fidar/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3aee3b61.css",
-    "static/js/main.2108710b.js"
+    "static/css/main.133fa360.css",
+    "static/js/main.25a18c84.js"
   ]
 }
