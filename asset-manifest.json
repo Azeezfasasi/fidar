@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fidar/static/css/main.31b69021.css",
-    "main.js": "/fidar/static/js/main.7e999586.js",
+    "main.css": "/fidar/static/css/main.5d3ceab4.css",
+    "main.js": "/fidar/static/js/main.5e7e2fe0.js",
     "static/js/453.ed3810f9.chunk.js": "/fidar/static/js/453.ed3810f9.chunk.js",
     "static/media/profile.svg": "/fidar/static/media/profile.54226bf39170917227282ff61924a9e4.svg",
     "static/media/recentavatar.svg": "/fidar/static/media/recentavatar.78a7fc1a8b6a58f328e908c72131cd43.svg",
@@ -15,6 +15,7 @@
     "static/media/document.svg": "/fidar/static/media/document.430fb36e5889903abb934fa1a9ee6546.svg",
     "static/media/help.svg": "/fidar/static/media/help.b8e9cdf9dd195085c4f1ac549ea66852.svg",
     "static/media/uploaddoc.svg": "/fidar/static/media/uploaddoc.be4fe9689f996b588abcd540ad224b06.svg",
+    "static/media/starfile.svg": "/fidar/static/media/starfile.ecbed32495082ff76f82ff353ea6cb3f.svg",
     "static/media/cut.svg": "/fidar/static/media/cut.6fbedc2584be4b20a36bc9e8b75d226c.svg",
     "static/media/compress.svg": "/fidar/static/media/compress.015fba6ea77674bb544819a8c89b777d.svg",
     "static/media/folderdelete.svg": "/fidar/static/media/folderdelete.1f575e5d60edcfdc8dc56aafbb53386c.svg",
@@ -44,12 +45,12 @@
     "static/media/dashboard.svg": "/fidar/static/media/dashboard.29e2081e02c65d8972ccb072fc11ade8.svg",
     "static/media/arrowback.svg": "/fidar/static/media/arrowback.e9a7350e94cea2e9e44432f8d27bd78b.svg",
     "static/media/Line3.svg": "/fidar/static/media/Line3.5e6af5edbee3ea85debb42431dd11969.svg",
-    "main.31b69021.css.map": "/fidar/static/css/main.31b69021.css.map",
-    "main.7e999586.js.map": "/fidar/static/js/main.7e999586.js.map",
+    "main.5d3ceab4.css.map": "/fidar/static/css/main.5d3ceab4.css.map",
+    "main.5e7e2fe0.js.map": "/fidar/static/js/main.5e7e2fe0.js.map",
     "453.ed3810f9.chunk.js.map": "/fidar/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.31b69021.css",
-    "static/js/main.7e999586.js"
+    "static/css/main.5d3ceab4.css",
+    "static/js/main.5e7e2fe0.js"
   ]
 }
