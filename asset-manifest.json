@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/fidar/static/css/main.96d64091.css",
-    "main.js": "/fidar/static/js/main.1b71f89f.js",
+    "main.css": "/fidar/static/css/main.0899fc35.css",
+    "main.js": "/fidar/static/js/main.257ea6d3.js",
     "static/js/453.ed3810f9.chunk.js": "/fidar/static/js/453.ed3810f9.chunk.js",
     "static/media/profile.svg": "/fidar/static/media/profile.54226bf39170917227282ff61924a9e4.svg",
+    "static/media/globe.svg": "/fidar/static/media/globe.64d250d47522d3102f27fe5e1fd235f9.svg",
     "static/media/recentavatar.svg": "/fidar/static/media/recentavatar.78a7fc1a8b6a58f328e908c72131cd43.svg",
     "static/media/welcomeicon.svg": "/fidar/static/media/welcomeicon.360d90c395b9f4bbab3308643d59f012.svg",
     "static/media/fidarlogo.svg": "/fidar/static/media/fidarlogo.32ccc9662fe07afabd34ecc9ca71b92f.svg",
@@ -33,6 +34,7 @@
     "static/media/folderopen.svg": "/fidar/static/media/folderopen.b61f8eda75d30291369386e05dd5628e.svg",
     "static/media/docu1.svg": "/fidar/static/media/docu1.f92535417088e9a26ebd09754376d8bb.svg",
     "index.html": "/fidar/index.html",
+    "static/media/Play.svg": "/fidar/static/media/Play.bd04f0ff768eda2a07eb56a36c152c0e.svg",
     "static/media/search.svg": "/fidar/static/media/search.3114cecf8e736faae5b3418f2e78327b.svg",
     "static/media/grade.svg": "/fidar/static/media/grade.7774ddc5b5770ff973940ec038b33b19.svg",
     "static/media/facebook.svg": "/fidar/static/media/facebook.061a2af47f46f1c44ed13e6d0146dfc9.svg",
@@ -44,14 +46,15 @@
     "static/media/share.svg": "/fidar/static/media/share.f72926e615f0e5f8210e01aaf46fc821.svg",
     "static/media/dashboard.svg": "/fidar/static/media/dashboard.29e2081e02c65d8972ccb072fc11ade8.svg",
     "static/media/mydashicon.svg": "/fidar/static/media/mydashicon.24234544d1c8f5a9b70fcfcfd2ac420d.svg",
+    "static/media/herocurve.svg": "/fidar/static/media/herocurve.ac9aeb82fdae7d575c4ada6bbd4e57db.svg",
     "static/media/arrowback.svg": "/fidar/static/media/arrowback.e9a7350e94cea2e9e44432f8d27bd78b.svg",
     "static/media/Line3.svg": "/fidar/static/media/Line3.5e6af5edbee3ea85debb42431dd11969.svg",
-    "main.96d64091.css.map": "/fidar/static/css/main.96d64091.css.map",
-    "main.1b71f89f.js.map": "/fidar/static/js/main.1b71f89f.js.map",
+    "main.0899fc35.css.map": "/fidar/static/css/main.0899fc35.css.map",
+    "main.257ea6d3.js.map": "/fidar/static/js/main.257ea6d3.js.map",
     "453.ed3810f9.chunk.js.map": "/fidar/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96d64091.css",
-    "static/js/main.1b71f89f.js"
+    "static/css/main.0899fc35.css",
+    "static/js/main.257ea6d3.js"
   ]
 }
