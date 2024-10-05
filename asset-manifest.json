@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fidar/static/css/main.0899fc35.css",
-    "main.js": "/fidar/static/js/main.257ea6d3.js",
+    "main.css": "/fidar/static/css/main.39339f42.css",
+    "main.js": "/fidar/static/js/main.0a51c899.js",
     "static/js/453.ed3810f9.chunk.js": "/fidar/static/js/453.ed3810f9.chunk.js",
     "static/media/profile.svg": "/fidar/static/media/profile.54226bf39170917227282ff61924a9e4.svg",
     "static/media/globe.svg": "/fidar/static/media/globe.64d250d47522d3102f27fe5e1fd235f9.svg",
@@ -49,12 +49,12 @@
     "static/media/herocurve.svg": "/fidar/static/media/herocurve.ac9aeb82fdae7d575c4ada6bbd4e57db.svg",
     "static/media/arrowback.svg": "/fidar/static/media/arrowback.e9a7350e94cea2e9e44432f8d27bd78b.svg",
     "static/media/Line3.svg": "/fidar/static/media/Line3.5e6af5edbee3ea85debb42431dd11969.svg",
-    "main.0899fc35.css.map": "/fidar/static/css/main.0899fc35.css.map",
-    "main.257ea6d3.js.map": "/fidar/static/js/main.257ea6d3.js.map",
+    "main.39339f42.css.map": "/fidar/static/css/main.39339f42.css.map",
+    "main.0a51c899.js.map": "/fidar/static/js/main.0a51c899.js.map",
     "453.ed3810f9.chunk.js.map": "/fidar/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0899fc35.css",
-    "static/js/main.257ea6d3.js"
+    "static/css/main.39339f42.css",
+    "static/js/main.0a51c899.js"
   ]
 }
