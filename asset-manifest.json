@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fidar/static/css/main.39339f42.css",
-    "main.js": "/fidar/static/js/main.eb715763.js",
+    "main.css": "/fidar/static/css/main.29fcec6b.css",
+    "main.js": "/fidar/static/js/main.fe082f00.js",
     "static/js/239.73850b33.chunk.js": "/fidar/static/js/239.73850b33.chunk.js",
     "static/js/213.1c5ac214.chunk.js": "/fidar/static/js/213.1c5ac214.chunk.js",
     "static/js/732.a1e6e011.chunk.js": "/fidar/static/js/732.a1e6e011.chunk.js",
@@ -10,7 +10,10 @@
     "static/media/globe.svg": "/fidar/static/media/globe.64d250d47522d3102f27fe5e1fd235f9.svg",
     "static/media/recentavatar.svg": "/fidar/static/media/recentavatar.78a7fc1a8b6a58f328e908c72131cd43.svg",
     "static/media/welcomeicon.svg": "/fidar/static/media/welcomeicon.360d90c395b9f4bbab3308643d59f012.svg",
+    "static/media/jigsaw.svg": "/fidar/static/media/jigsaw.8af76dcca2bf20af2f7023875e2bcaf8.svg",
     "static/media/fidarlogo.svg": "/fidar/static/media/fidarlogo.32ccc9662fe07afabd34ecc9ca71b92f.svg",
+    "static/media/renewit.svg": "/fidar/static/media/renewit.563815ab6fe4e8298e596e7732f2f1ba.svg",
+    "static/media/block.svg": "/fidar/static/media/block.59c26fc579b59b1b34969a65f7cb190e.svg",
     "static/media/png.svg": "/fidar/static/media/png.5d968f6132ee44a17efe899ed47a75fc.svg",
     "static/media/jpj.svg": "/fidar/static/media/jpj.dc5280d25ecf69aa14852324192b2fc7.svg",
     "static/media/settings.svg": "/fidar/static/media/settings.896684b0820128fcc20c49519f65d23b.svg",
@@ -23,9 +26,12 @@
     "static/media/cut.svg": "/fidar/static/media/cut.6fbedc2584be4b20a36bc9e8b75d226c.svg",
     "static/media/compress.svg": "/fidar/static/media/compress.015fba6ea77674bb544819a8c89b777d.svg",
     "static/media/folderdelete.svg": "/fidar/static/media/folderdelete.1f575e5d60edcfdc8dc56aafbb53386c.svg",
+    "static/media/threelines.svg": "/fidar/static/media/threelines.9b3ae557a35b4c4695b533b303109fe2.svg",
     "static/media/outbox.svg": "/fidar/static/media/outbox.3c2a667bf5895f7ce73c6087c9065f3f.svg",
     "static/media/inbox.svg": "/fidar/static/media/inbox.2c69d50f5e139e7d7af2f73b869a2966.svg",
+    "static/media/animal.svg": "/fidar/static/media/animal.974ef434561905d3cf9d40f3a27d63a8.svg",
     "static/media/more.svg": "/fidar/static/media/more.63401ab53fe71209c362dded8d6944ba.svg",
+    "static/media/command.svg": "/fidar/static/media/command.6f58e046e8a8d75c2afb512313a00ad2.svg",
     "static/media/folder.svg": "/fidar/static/media/folder.92d601470935f0f366e93af8d00237e2.svg",
     "static/media/google.svg": "/fidar/static/media/google.c1b89f3abb3fcec6bbafe83b215dcaac.svg",
     "static/media/analytics.svg": "/fidar/static/media/analytics.8c822b33cbf003d64c5b84bf111b2879.svg",
@@ -34,7 +40,9 @@
     "static/media/drafts.svg": "/fidar/static/media/drafts.c2cb4f4ee41fcc10d1b08e809b8a1962.svg",
     "static/media/chat.svg": "/fidar/static/media/chat.12c74b2d5488aa09220aa5e1eb06fd9e.svg",
     "static/media/notifications.svg": "/fidar/static/media/notifications.f6c6392b762af7a0e77a13f972353612.svg",
+    "static/media/starrating.svg": "/fidar/static/media/starrating.46311e6c8640f78fae516db6611a45e4.svg",
     "static/media/folderopen.svg": "/fidar/static/media/folderopen.b61f8eda75d30291369386e05dd5628e.svg",
+    "static/media/piechat.svg": "/fidar/static/media/piechat.b5bbae711f22e7723832f2b2170733be.svg",
     "static/media/docu1.svg": "/fidar/static/media/docu1.f92535417088e9a26ebd09754376d8bb.svg",
     "index.html": "/fidar/index.html",
     "static/media/Play.svg": "/fidar/static/media/Play.bd04f0ff768eda2a07eb56a36c152c0e.svg",
@@ -49,18 +57,19 @@
     "static/media/share.svg": "/fidar/static/media/share.f72926e615f0e5f8210e01aaf46fc821.svg",
     "static/media/dashboard.svg": "/fidar/static/media/dashboard.29e2081e02c65d8972ccb072fc11ade8.svg",
     "static/media/mydashicon.svg": "/fidar/static/media/mydashicon.24234544d1c8f5a9b70fcfcfd2ac420d.svg",
+    "static/media/activity.svg": "/fidar/static/media/activity.964e4479b3a69c69dfb7e4120f9fcf6f.svg",
     "static/media/herocurve.svg": "/fidar/static/media/herocurve.ac9aeb82fdae7d575c4ada6bbd4e57db.svg",
     "static/media/arrowback.svg": "/fidar/static/media/arrowback.e9a7350e94cea2e9e44432f8d27bd78b.svg",
     "static/media/Line3.svg": "/fidar/static/media/Line3.5e6af5edbee3ea85debb42431dd11969.svg",
-    "main.39339f42.css.map": "/fidar/static/css/main.39339f42.css.map",
-    "main.eb715763.js.map": "/fidar/static/js/main.eb715763.js.map",
+    "main.29fcec6b.css.map": "/fidar/static/css/main.29fcec6b.css.map",
+    "main.fe082f00.js.map": "/fidar/static/js/main.fe082f00.js.map",
     "239.73850b33.chunk.js.map": "/fidar/static/js/239.73850b33.chunk.js.map",
     "213.1c5ac214.chunk.js.map": "/fidar/static/js/213.1c5ac214.chunk.js.map",
     "732.a1e6e011.chunk.js.map": "/fidar/static/js/732.a1e6e011.chunk.js.map",
     "453.ed3810f9.chunk.js.map": "/fidar/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39339f42.css",
-    "static/js/main.eb715763.js"
+    "static/css/main.29fcec6b.css",
+    "static/js/main.fe082f00.js"
   ]
 }
