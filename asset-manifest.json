@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fidar/static/css/main.25582e33.css",
-    "main.js": "/fidar/static/js/main.3f6e6e76.js",
+    "main.css": "/fidar/static/css/main.639577d9.css",
+    "main.js": "/fidar/static/js/main.94682318.js",
     "static/js/239.2b17afd9.chunk.js": "/fidar/static/js/239.2b17afd9.chunk.js",
     "static/js/644.32feff49.chunk.js": "/fidar/static/js/644.32feff49.chunk.js",
     "static/js/732.be7fbf8b.chunk.js": "/fidar/static/js/732.be7fbf8b.chunk.js",
@@ -95,15 +95,15 @@
     "static/media/arrowback.svg": "/fidar/static/media/arrowback.e9a7350e94cea2e9e44432f8d27bd78b.svg",
     "static/media/Line3.svg": "/fidar/static/media/Line3.5e6af5edbee3ea85debb42431dd11969.svg",
     "static/media/havetriangle.svg": "/fidar/static/media/havetriangle.56d99f91cafaf3fc9e0178a494d7b27b.svg",
-    "main.25582e33.css.map": "/fidar/static/css/main.25582e33.css.map",
-    "main.3f6e6e76.js.map": "/fidar/static/js/main.3f6e6e76.js.map",
+    "main.639577d9.css.map": "/fidar/static/css/main.639577d9.css.map",
+    "main.94682318.js.map": "/fidar/static/js/main.94682318.js.map",
     "239.2b17afd9.chunk.js.map": "/fidar/static/js/239.2b17afd9.chunk.js.map",
     "644.32feff49.chunk.js.map": "/fidar/static/js/644.32feff49.chunk.js.map",
     "732.be7fbf8b.chunk.js.map": "/fidar/static/js/732.be7fbf8b.chunk.js.map",
     "453.68693753.chunk.js.map": "/fidar/static/js/453.68693753.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25582e33.css",
-    "static/js/main.3f6e6e76.js"
+    "static/css/main.639577d9.css",
+    "static/js/main.94682318.js"
   ]
 }
